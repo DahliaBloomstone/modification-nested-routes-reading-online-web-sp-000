@@ -7,3 +7,5 @@ module PostsHelper
     end
   end
 end
+
+#posts helper 
