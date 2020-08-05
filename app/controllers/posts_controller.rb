@@ -23,7 +23,7 @@ def new
   if params[:author_id] && !Author.exists?(params[:author_id])
     redirect_to authors_path, alert: "Author not found."
   else
-    @post = Post.new(author_id: params[:author_id])
+    @post = Post.new(author_id: params[:author_id]) #creating a new post for a valid author
   end
 end
 
