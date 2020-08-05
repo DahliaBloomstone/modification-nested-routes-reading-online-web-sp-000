@@ -16,6 +16,7 @@ class PostsController < ApplicationController
     end
   end
 
+#We have the route, now update new action to handle the :author_id param
   def new
     @post = Post.new(author_id: params[:author_id])
   end
