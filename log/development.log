@@ -4065,3 +4065,11 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/posts/18" for 108.41.251.77 at 2020-08-05 18:50:30 +0000
+Cannot render console from 108.41.251.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (9.7ms)
