@@ -20,7 +20,7 @@ class PostsController < ApplicationController
 #if we capture author_id through a nested route, we keep track of it
 # and assign the post to that author
 def new
-  if params[:author_id] && !Author.exists?(params[:author_id]) #check for params[:author_id]
+  if params[:author_id] && !Author.exists?(params[:author_id]) #check for params[:author_id] and see if author exists 
     redirect_to authors_path, alert: "Author not found."
   else
     @post = Post.new(author_id: params[:author_id]) #creating a new post for a valid author
