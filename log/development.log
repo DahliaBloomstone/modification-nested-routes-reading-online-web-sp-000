@@ -3917,3 +3917,9 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/authors" for 108.41.251.77 at 2020-08-05 18:44:13 +0000
+Cannot render console from 108.41.251.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (12.3ms)
