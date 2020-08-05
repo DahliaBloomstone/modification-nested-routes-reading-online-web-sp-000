@@ -4,4 +4,9 @@ Rails.application.routes.draw do
     resources :posts, only: [:show, :index, :new]
   end
   resources :posts
-end 
+end
+
+# creating a new post for an author
+# create a new post that is linked to an author
+# before: nested resources to view posts by an author
+# now: nested resources to create posts by author 
