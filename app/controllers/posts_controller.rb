@@ -43,7 +43,8 @@ class PostsController < ApplicationController
 
 #strong params
 #post controller must accept :author_id as a param for a post
-#strong params = security practice to help prevent allowing users to update sensitive model attributes 
+#strong params = security practice to help prevent allowing users to update sensitive model attributes
+# author_id allowed for mass assignment in the create action  
   def post_params
     params.require(:post).permit(:title, :description, :author_id)
   end
