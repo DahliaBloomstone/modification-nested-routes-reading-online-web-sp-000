@@ -3867,3 +3867,14 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/authors/6" for 108.41.251.77 at 2020-08-05 18:40:43 +0000
+Cannot render console from 108.41.251.77! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 6]]
+  Rendered authors/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.9ms)
+
+
