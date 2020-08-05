@@ -44,7 +44,7 @@ def edit
 if params[:author_id] #comes from our nested route
   author = Author.find_by(id: params[:author_id]) #find valid author
   if author.nil?
-    redirect_to authors_path, alert: "Author not found."
+    redirect_to authors_path, alert: "Author not found." #flash alert if can't find valid author
   else
     @post = author.posts.find_by(id: params[:id])
     redirect_to author_posts_path(author), alert: "Post not found." if @post.nil?
