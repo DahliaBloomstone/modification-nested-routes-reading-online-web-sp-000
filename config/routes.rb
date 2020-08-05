@@ -11,4 +11,4 @@ end
 # before: nested resources to view posts by an author
 # now: nested resources to create posts by author by adding :new
 
-# access to /authors/:author_id/posts/new, and a new_author_post_path helper.
+# access to /authors/:author_id/posts/new, and a new_author_post_path helper
