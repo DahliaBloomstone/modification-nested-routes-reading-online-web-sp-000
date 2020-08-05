@@ -14,4 +14,4 @@ end
 # access to /authors/:author_id/posts/new, and a new_author_post_path helper
 
 # rake routes:
-# url pattern: /authors/:author_id/posts/new = posts#new controller action 
+# url pattern: /authors/:author_id/posts/new = posts#new controller action
