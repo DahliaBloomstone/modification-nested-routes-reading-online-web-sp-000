@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 
 #We have the route, now update new action to handle the :author_id param
 #if we capture author_id through a nested route, we keep track of it
-# and assign the post to that author 
+# and assign the post to that author
   def new
     @post = Post.new(author_id: params[:author_id])
   end
@@ -42,6 +42,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :description)
+    params.require(:post).permit(:title, :description, :author_id)
   end
 end
