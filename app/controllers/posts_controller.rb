@@ -39,6 +39,7 @@ end
   redirect_to post_path(@post)
 end
 
+#check if author_id is valid and the post matches the author
 def edit
 if params[:author_id]
   author = Author.find_by(id: params[:author_id])
