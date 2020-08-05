@@ -41,6 +41,8 @@ class PostsController < ApplicationController
 
   private
 
+#strong params
+#post controller must accept :author_id as a param for a post 
   def post_params
     params.require(:post).permit(:title, :description, :author_id)
   end
