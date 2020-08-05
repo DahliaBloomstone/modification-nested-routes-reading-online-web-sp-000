@@ -30,11 +30,10 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find(params[:id])
-    @post.update(post_params)
-    redirect_to post_path(@post)
-  end
-
+  @post = Post.find(params[:id])
+  @post.update(post_params)
+  redirect_to post_path(@post)
+end
   def edit
     @post = Post.find(params[:id])
   end
@@ -44,7 +43,7 @@ class PostsController < ApplicationController
 #strong params
 #post controller must accept :author_id as a param for a post
 #strong params = security practice to help prevent allowing users to update sensitive model attributes
-# author_id allowed for mass assignment in the create action  
+# author_id allowed for mass assignment in the create action
   def post_params
     params.require(:post).permit(:title, :description, :author_id)
   end
