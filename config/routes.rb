@@ -15,3 +15,6 @@ end
 
 # rake routes:
 # url pattern: /authors/:author_id/posts/new = posts#new controller action
+
+#editing an authors posts
+#:edit action in the nested route 
