@@ -41,7 +41,7 @@ end
 
 #check if author_id is valid and the post matches the author
 def edit
-if params[:author_id]
+if params[:author_id] #comes from our nested route 
   author = Author.find_by(id: params[:author_id])
   if author.nil?
     redirect_to authors_path, alert: "Author not found."
